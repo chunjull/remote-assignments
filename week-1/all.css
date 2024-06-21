@@ -47,25 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-/* Font Family*/
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-medium {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ubuntu-bold {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* Custom CSS */
 *, 
 *:before,
@@ -76,6 +57,10 @@ table {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+p {
+  font-size: 16px;
 }
 
 .container {
