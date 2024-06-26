@@ -3,14 +3,18 @@ Assignment 1: Function and Array
 Complete the function below to find the max number of the passing array of numbers.
 */
 
-/* Example
+/* Example */
 function max(numbers) {
-	// your code here
+	let maxNum = numbers[0];
+	for (let i = 0; i < numbers.length; i++) {
+		if (numbers[i] > maxNum) {
+			maxNum = numbers[i];
+		} 
+	}return maxNum;
 }
+
 console.log(max([1, 2, 4, 5])); // expected output: 5
 console.log(max([5, 2, 7, 1, 6])); // expected output: 7
-*/
-
 
 /*
 Assignment 2: Function and Object

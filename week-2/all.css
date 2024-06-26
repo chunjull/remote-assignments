@@ -381,3 +381,7 @@ h3 {
   outline-style: solid;
   box-shadow: 0 0 0 2px cadetblue;
 }
+
+.d-none {
+  display: none;
+}
