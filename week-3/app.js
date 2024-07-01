@@ -10,5 +10,27 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Server is listening on port ${port}`);
+});
+
+/*
+Assignment 2: Build Backend API for Front-End
+*/
+app.get("/getData", (req, res) => {
+  res.send("Lack of Parameter");
+});
+
+/*
+Assignment 3: Connect to Backend API by AJAX
+*/
+
+/*
+Assignment 5: HTTP Cookie
+*/
+
+/*
+404 page
+*/
+app.use(function(req, res, next) {
+  res.status(404).send('Sorry cant find that!');
 });
