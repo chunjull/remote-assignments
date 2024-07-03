@@ -14,6 +14,6 @@ calculateBtn.addEventListener("click", () => {
       result.innerHTML = data;
     })
     .catch(error => {
-      result.innerHTML = 'Error: ' + error;
+      console.log("Error: " ,error);
     });
 });
