@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/remote-assignments/week-4/assignment-3/static/css/main.9b08f3b8.css",
+    "main.js": "/remote-assignments/week-4/assignment-3/static/js/main.7aabc3bd.js",
+    "static/js/453.22c0cc38.chunk.js": "/remote-assignments/week-4/assignment-3/static/js/453.22c0cc38.chunk.js",
+    "index.html": "/remote-assignments/week-4/assignment-3/index.html",
+    "main.9b08f3b8.css.map": "/remote-assignments/week-4/assignment-3/static/css/main.9b08f3b8.css.map",
+    "main.7aabc3bd.js.map": "/remote-assignments/week-4/assignment-3/static/js/main.7aabc3bd.js.map",
+    "453.22c0cc38.chunk.js.map": "/remote-assignments/week-4/assignment-3/static/js/453.22c0cc38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b08f3b8.css",
+    "static/js/main.7aabc3bd.js"
+  ]
+}
