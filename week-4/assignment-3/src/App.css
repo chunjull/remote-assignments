@@ -48,24 +48,6 @@ h1 {
   font-style: normal;
 }
 
-.toggle-button {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 24px;
-}
-
-.bar {
-  height: 4px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 4px;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -86,6 +68,7 @@ h1 {
 
 .menu li button {
   border: none;
+  outline: 0;
   background-color: transparent;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
@@ -97,36 +80,43 @@ h1 {
   transition: .3s;
 }
 
-.menu li:hover {
-  box-shadow: 0 -5px 0px #fff inset;
+.navBtn {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding: 12px 16px;
+  transition: .3s;
+  display: none;
 }
 
-.menu li button:hover {
+.menu li button:hover,
+.navBtn:hover {
+  color: rgb(54, 100, 102);
   cursor: pointer;
 }
 
 @media (max-width: 799px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   h1 {
     padding: 16px 0;
   }
 
-  .toggle-button {
+  .navBtn {
     display: flex;
   }
 
   .navbar {
     display: none;
-    width: 100%;
+    position: static;
   }
 
   .menu {
     flex-direction: column;
-    width: 100%;
+    padding: 40px;
+    height: 100vh;
   }
 
   .menu li a {
@@ -135,22 +125,13 @@ h1 {
 
   .navbar.active {
     display: flex;
-  }
-
-  .bar.active:nth-child(1) {
-    position: relative;
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-
-  .bar.active:nth-child(2) {
-    display: none;
-  }
-
-  .bar.active:nth-child(3) {
-    position: relative;
-    top: -30%;
-    transform: rotate(45deg);
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 4px;
+    right: -16px;
+    padding: 0 16px;
+    background-color: cadetblue;
   }
 }
 
