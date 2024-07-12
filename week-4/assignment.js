@@ -1,6 +1,7 @@
 /*
 Assignment1: callback function
 */
+
 function delayedResult(n1, n2, delayTime, callback) {
   window.setTimeout(function(result) {
     result = n1 + n2;
@@ -13,6 +14,19 @@ delayedResult(4, 5, 3000, function(result) {
 delayedResult(-5, 10, 2000, function(result) {
   window.alert(result);
 });
+
+// Assignment1.5: Convert callback function into Promise
+// delayedResult(4, 5, 3000).then(console.log);
+function delayedResult(n1, n2, delayTime) {
+  return new Promise((resolve) => {
+    window.setTimeout(() => {
+      const result = n1 + n2;
+      resolve(result);
+    }, delayTime);
+  });
+}
+delayedResult(4, 5, 3000).then(console.log);
+delayedResult(-5, 10, 2000).then(window.alert);
 
 /*
 Assignment 2: HTML DOM and AJAX
