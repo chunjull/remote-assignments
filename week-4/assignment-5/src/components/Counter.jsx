@@ -13,11 +13,9 @@ function SingleCounter({ count, increment }) {
 
 function Counter() {
   const [counts, setCounts] = useState([0, 0, 0]);
-  const [allCount, setAllCount] = useState(0);
 
   const incrementAll = () => {
     setCounts(counts.map(count => count + 1));
-    setAllCount(allCount + 1);
   }
 
   const addCounter = () => {
