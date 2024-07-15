@@ -1,12 +1,15 @@
+import { useState } from "react";
+
 function Banner() {
   const welcomeMessage = "welcome explorer".toUpperCase();
   const checkedMessage = "HAVE a GOOD TIME!";
-  const handleClick = (e) => e.target.textContent = `${checkedMessage}`;
-  const resetClick = (e) => e.target.textContent = `${welcomeMessage}`;
+  const [message, setMessage] = useState(welcomeMessage);
+  const handleClick = () => setMessage(checkedMessage);
+  const resetClick = () => setMessage(welcomeMessage);
   return(
     <div className="banner">
       <div className="container">
-        <h2 onClick={(e) => handleClick(e)} onDoubleClick={(e) => resetClick(e)}>{ welcomeMessage }</h2>
+        <h2 onClick={ handleClick } onDoubleClick={ resetClick }>{ message }</h2>
       </div>
     </div>
   );
