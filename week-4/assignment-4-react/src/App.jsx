@@ -35,10 +35,6 @@ function App() {
     setPage(prevPage => prevPage + 1);
   };
 
-  useEffect(() => {
-    setPage(1);
-  }, []);
-
   return (
     <>
       <ul id="repos" className="cardContainer">
